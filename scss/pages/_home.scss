@@ -1,36 +1,34 @@
-/*home: links e imagenes*/
-
-.main__item {
+/*Estilos para home*/ 
+/*nesting*/
+main {
+    .main__item {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
-
-/*home: links*/
-
-.items {
+div .items { /*home: links*/
     width: 100%;
-    font-family: sans-serif;
-    gap: 20px;
     text-transform: uppercase;
     font-size: 12px;
     list-style: none;
     text-align: center;
-    margin-left: 50%;
 }
-
-/*home: imagenes*/
-
-.imagenes {
+.imagenes { /*home: imagenes*/
     width: 300px;
     height: 300px;
-    display: inline-block;
-    flex-direction: row;
-    margin-left: 50%;
+}
 }
 
-/*animaciones*/
+main{ //cambiar
+    margin: 0px 30px;
+    height: 70vh;
+    align-content: center;
+    row-gap: 10px;
+    margin-top: 120px;
+    padding: auto;
+    margin-bottom: 10px;
+}
 
+/*animacion*/
 .transformer{
     margin: 0 auto;
     margin-top: 20px;
@@ -60,8 +58,4 @@
 
 .transformer:hover::before{
     opacity: 1;
-}
-
-.transformer:hover{
-    filter: grayscale(50%);
 }

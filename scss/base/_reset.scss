@@ -50,20 +50,7 @@ p{
     padding: 5px;
 }
 
-/*estilos de main*/
 
-main{
-    margin: 0px 30px;
-    height: 70vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 25%);
-    align-content: center;
-    row-gap: 10px;
-    margin-top: 120px;
-    padding: auto;
-    margin-bottom: 10px;
-}
 
 main div img{
     width: 100%;

@@ -1,0 +1,27 @@
+/*estilos de main*/
+
+.main__tienda{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 170px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.img__tienda--tamaño {
+    grid-column: span 2;
+}
+
+.button--tamaño {
+    grid-column: span 3;
+    border: solid 2px #E98E9F77;
+    align-self:flex-start;
+    padding-top: 70px;
+    height: 50%;
+}
+
+.btn--tamaño {
+    font-size: 40px;
+}
