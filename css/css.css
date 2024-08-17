@@ -56,7 +56,6 @@ main .img-dos, main .img-cinco {
 
 /* estilos de footer */
 footer {
-  margin-top: 50px;
   color: #FF81AE;
   text-align: center;
   font-size: 10px;
@@ -157,10 +156,16 @@ main {
   font-size: 40px;
 }
 
-.testim {
+.main__testimonios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.testimonios {
   width: 200px;
   height: 300px;
-  margin-left: 20%;
   border: 4px solid #c99e9e;
   box-shadow: 0px 0px 15px #dda7a7;
   background-color: #fff4f4;
@@ -169,6 +174,8 @@ main {
   text-align: center;
   font-style: oblique;
   font-size: 15px;
+  place-self: center;
+  margin-right: 10%;
 }
 
 .quienessomos {
@@ -179,14 +186,28 @@ main {
 .servicios {
   margin-top: 150px;
   text-align: justify;
-  padding: auto;
+}
+
+/*estilos de main */
+.main__servicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  gap: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.img__servicios {
+  width: 100%;
+  height: 210px;
 }
 
 /*titulo de contacto*/
 h2 {
   text-align: left;
   margin: 0;
-  margin-bottom: 10px;
   font-family: sans-serif;
   font-weight: bold;
   font-size: 1.3em;

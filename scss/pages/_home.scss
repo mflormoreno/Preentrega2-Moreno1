@@ -13,8 +13,7 @@ div .items { /*home: links*/
     text-align: center;
 }
 .imagenes { /*home: imagenes*/
-    width: 300px;
-    height: 300px;
+    @include medidas (300px, 300px);
 }
 }
 
@@ -36,8 +35,7 @@ main{ //cambiar
     color: #4e4b4b;
     text-align: center;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    @include medidas(150px, 150px);
     font-size: 100px;
     position: relative;
     overflow: hidden;
@@ -48,8 +46,7 @@ main{ //cambiar
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    @include medidas (100%, 100%);
     background-image: url(../imagenes/flor\ dibujo.PNG);
     background-size: cover;
     opacity: 0;

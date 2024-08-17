@@ -1,2 +1,6 @@
-//mixin para img
+@mixin medidas ($width, $height) {
+    width: $width;
+    height: $height;
+}
+ 
 
