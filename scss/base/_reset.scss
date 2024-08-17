@@ -1,0 +1,86 @@
+/*RESET*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*body*/
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    color: #000000;
+    background-color: $color-principal;
+}
+
+/*logo de todos los html*/
+
+.logo {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/*mis h1*/
+
+body header .banner {
+    font-family: "Playwrite BE VLG", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: inline-block;
+    font-size: 50px;
+    color: #E98E9F;
+    text-decoration: none;
+}
+
+/*parrafos de todos mis html*/
+
+p{
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    padding: 5px;
+}
+
+/*estilos de main*/
+
+main{
+    margin: 0px 30px;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 25%);
+    align-content: center;
+    row-gap: 10px;
+    margin-top: 120px;
+    padding: auto;
+    margin-bottom: 10px;
+}
+
+main div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+main .img-dos, main .img-cinco{
+    display: none;
+}
+
+/* estilos de footer */
+
+footer{
+    margin-top: 50px;
+    color: #FF81AE;
+    text-align: center;
+    font-size: 10px;
+}

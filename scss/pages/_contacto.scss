@@ -1,0 +1,67 @@
+/*titulo de contacto*/
+
+h2{
+    text-align:left;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+/*titulo de formulario de contacto*/
+
+h5{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+/*formulario de contacto*/
+
+form {
+    background-color: transparent;
+    padding: 10px 0;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 0px 55px #dda7a7;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.form_input {
+    padding: 6px 20px;
+}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 20px;
+    border: none;
+    border: 1px solid #666;
+    box-shadow: 0px 0px 15px #dda7a7;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #000000
+}
+
+textarea{
+    min-width: 100%;
+    resize: none;
+    min-height: 102px;
+    font-family: sans-serif;
+    box-sizing: content;
+}
+
+.contacto{
+    margin: 0px 20px;
+    height: 70vh;
+    display: inline-block;
+    text-align: justify;
+}
