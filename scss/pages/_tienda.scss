@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3, 1fr);
-    margin-top: 170px;
+    margin-top: 15%;
     text-align: center;
     align-items: center;
     width: 100%;
@@ -14,14 +14,16 @@
     grid-column: span 2;
 }
 
+.p__tienda{
+    text-align: justify;
+}
+
 .button--tamaño {
     grid-column: span 3;
-    border: solid 2px #E98E9F77;
     align-self:flex-start;
-    padding-top: 70px;
-    height: 50%;
 }
 
 .btn--tamaño {
-    font-size: 40px;
+    font-size: 30px;
 }
+
