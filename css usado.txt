@@ -1,0 +1,38 @@
+/*RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body*/
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    color: #000000;
+    background-color: #f0e6e6
+}
+
+/*logo de todos los html*/
+
+.logo {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/*mis h1*/
+
+body header .banner {
+    font-family: "Playwrite BE VLG", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: inline-block;
+    font-size: 50px;
+    color: #E98E9F;
+    text-decoration: none;
+}
