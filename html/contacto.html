@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <!--Titulo de la pestaña-->
     <title>Contacto</title>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--Ruta de mi css-->
-    <link rel="stylesheet" href="../css/css.css">
     <!--Tipografia-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!--Ruta de mi css-->
+    <link rel="stylesheet" href="../css/css.css">
 </head>
 
 <body>
@@ -23,10 +25,10 @@
         <!--Barra de navegación-->
         <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <img src="../imagenes_comprimidas/logo.png" alt="logo de la web" class="logo">
+                <img src="../imagenes_comprimidas/logo.png" alt="logo de la web" class="logo logo__contacto">
                 <a class="banner" href="../index.html">Matemática by Flor</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon icon__contacto"></span>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
@@ -65,36 +67,35 @@
     </header>
 
     <!--Seccion tres-->
-    <main class="main__contacto container">
-        <h2>Contacto</h2>
-        <p class="container">
-            ¡Estamos aquí para ayudarte! Si tienes alguna pregunta sobre nuestros cursos, necesitas más información o simplemente quieres ponerte en contacto con nosotros, no dudes en escribirnos.
-
-            Puedes enviarnos un mensaje completando el formulario a continuación o escribirnos directamente a matematicabyflor@gmail.com. También puedes seguirnos en nuestras redes sociales para estar al tanto de todas nuestras novedades y recursos.
-
+    <main class="container main__contacto">
+        <h1 class="h1__contacto text-center">Contacto</h1>
+        <p class="p__contacto mt-2">
+            ¡Estamos aquí para ayudarte! Si tienes alguna pregunta sobre nuestros cursos, necesitas más información o simplemente quieres ponerte en contacto con nosotros, no dudes en escribirnos. <br>
+            Puedes enviarnos un mensaje completando el formulario a continuación o escribirnos directamente a matematicabyflor@gmail.com. También puedes seguirnos en nuestras redes sociales para estar al tanto de todas nuestras novedades y recursos. <br>
             Nos comprometemos a responderte lo antes posible y brindarte toda la asistencia que necesites. 
         </p>
+        <!--Mi formulario-->
+        <form class="form__contacto">
+            <h2 class="h2__contacto">Formulario de contacto</h2>
+            <div class="form_input">
+                <input type="text" placeholder="Nombre completo">
+            </div>
+            <div class="form_input">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="form_input">
+                <textarea rows="8" placeholder="Deja tu mensaje"></textarea>
+            </div>
+            <div class="form_input">
+                <input type="submit" value="Enviar formulario">
+            </div>
+            <div class="form_input">
+                <input type="reset" value="Borrar formulario">
+            </div>
+        </form>
     </main>
 
-    <!--Mi formulario-->
-    <form class="form__contacto">
-        <h5>Formulario de contacto</h5>
-        <div class="form_input">
-            <input type="text" placeholder="Nombre completo">
-        </div>
-        <div class="form_input">
-            <input type="email" placeholder="Email">
-        </div>
-        <div class="form_input">
-            <textarea rows="8" placeholder="Deja tu mensaje"></textarea>
-        </div>
-        <div class="form_input">
-            <input type="submit" value="Enviar formulario">
-        </div>
-        <div class="form_input">
-            <input type="reset" value="Borrar formulario">
-        </div>
-    </form>
+
     
     <!--pie de pagina-->
     <footer>

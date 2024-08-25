@@ -1,12 +1,10 @@
 /*RESET*/
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 /*body*/
 
@@ -27,6 +25,13 @@ body{
 }
 
 /*mis h1*/
+
+h1 {
+    text-align:center;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
 
 body header .banner {
     font-family: "Playwrite BE VLG", cursive;
@@ -50,14 +55,11 @@ p{
     padding: 5px;
 }
 
-
-
 main div img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 
 main .img-dos, main .img-cinco{
     display: none;
@@ -65,9 +67,10 @@ main .img-dos, main .img-cinco{
 
 /* estilos de footer */
 
-footer{
-
+footer {
     color: #FF81AE;
     text-align: center;
     font-size: 10px;
+    padding: 70px 0;
+    margin-top: 30px;
 }

@@ -23,6 +23,13 @@ body {
 }
 
 /*mis h1*/
+h1 {
+  text-align: center;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
 body header .banner {
   font-family: "Playwrite BE VLG", cursive;
   font-optical-sizing: auto;
@@ -59,40 +66,46 @@ footer {
   color: #FF81AE;
   text-align: center;
   font-size: 10px;
+  padding: 70px 0;
+  margin-top: 30px;
 }
 
 /*Estilos para home*/
 /*nesting*/
-main .main__item {
+.main__home {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 160px;
+  justify-content: center;
+  align-content: center;
+}
+.main__home .main__item {
   display: flex;
   justify-content: space-between;
 }
-main div .items { /*home: links*/
+.main__home .main__item .items { /*home: links*/
   width: 100%;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 18px;
   list-style: none;
   text-align: center;
+  margin-bottom: 10px;
 }
-main .imagenes { /*home: imagenes*/
+.main__home .main__item .items .estilos-link {
+  text-decoration: none;
+}
+.main__home .main__item .imagenes { /*home: imagenes*/
   width: 300px;
   height: 300px;
-}
-
-.main__home {
-  margin: 0px 30px;
-  height: 70vh;
-  align-content: center;
-  row-gap: 10px;
-  margin-top: 120px;
-  padding: auto;
-  margin-bottom: 10px;
+  box-shadow: 0 0 20px #FF81AE;
+  margin-top: 20px;
 }
 
 /*animacion*/
 .transformer {
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
   background-color: #fdb2b2;
   color: #4e4b4b;
   text-align: center;
@@ -203,18 +216,29 @@ main .imagenes { /*home: imagenes*/
   height: 210px;
 }
 
-/*titulo de contacto*/
-h2 {
-  text-align: left;
+.logo__contacto {
+  width: 70px !important;
+  height: 70px;
+  padding: 0;
+}
+
+.icon__contacto {
+  width: 50px !important;
+  height: 50px !important;
   margin: 0;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 1.3em;
-  padding: 10px;
+}
+
+.main__contacto {
+  margin-top: 100px;
+  text-align: justify;
 }
 
 /*titulo de formulario de contacto*/
-h5 {
+.p__contacto {
+  margin-bottom: 40px;
+}
+
+.h2__contacto {
   text-align: center;
   margin: 0;
   margin-bottom: 10px;
@@ -226,7 +250,7 @@ h5 {
 }
 
 /*formulario de contacto*/
-form {
+.form__contacto {
   background-color: transparent;
   padding: 10px 0;
   max-width: 500px;
@@ -241,7 +265,7 @@ form {
 }
 
 input, textarea {
-  width: 100%;
+  width: 50%;
   box-sizing: border-box;
   padding: 6px 20px;
   border: none;
@@ -260,52 +284,52 @@ textarea {
   box-sizing: content;
 }
 
-.main__contacto {
-  padding: 15%;
-  height: 70vh;
-  text-align: justify;
-}
-
 /* estilos de mobile mq mobile */
 @media screen and (max-width: 767px) {
-  body {
-    font-size: 1.7rem;
-  }
+  /*General*/
+  /*Header*/
   header {
     display: flex;
     flex-direction: row;
   }
-  header nav ul {
-    display: flex;
-    gap: 10px;
-  }
   .logo {
-    width: 100px;
+    width: 180px;
     height: auto;
     border-radius: 50%;
   }
   .navbar .banner {
-    font-size: 30px;
+    font-size: 60px;
     display: none;
   }
   .navbar .container-fluid {
     align-items: center;
   }
   .navbar-nav .nav-link {
-    font-size: 14px;
+    font-size: 30px;
     text-align: center;
     padding: 5px 0;
   }
+  .navbar-toggler-icon {
+    width: 100px;
+    height: 100px;
+  }
+  .dropdown-menu {
+    font-size: 26px;
+  }
+  footer {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+  }
+  /*Home*/
   .main__home {
+    margin-top: 200px;
     display: flex;
-    height: auto;
   }
   .main__item {
     flex-direction: column;
-    margin-top: 10%;
+    gap: 40px;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
   }
   .imagenes_comprimidas {
     width: 100%;
@@ -314,13 +338,29 @@ textarea {
   .animacion {
     display: none;
   }
+  /*Nuestras clases*/
+  .h1__nuestrasclases {
+    font-size: 60px;
+    margin: auto;
+  }
+  .p__nuestrasclases {
+    font-size: 40px;
+  }
+  /*Tienda*/
   .main__tienda {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 30%;
+    margin-top: 20%;
+  }
+  .h1__tienda {
+    font-size: 60px;
+    margin: auto;
+  }
+  .p__tienda {
+    font-size: 40px;
   }
   .button--tamaño {
     grid-column: span 1;
@@ -330,9 +370,17 @@ textarea {
   .btn--tamaño {
     font-size: 20px;
   }
+  /*Quienes somos*/
   .main__quienessomos {
-    margin-top: 15%;
+    margin-top: 5%;
   }
+  .h1__quienessomos {
+    font-size: 60px;
+  }
+  .p__quienessomos {
+    font-size: 43px;
+  }
+  /*Servicios*/
   .main__servicios {
     display: flex;
     flex-direction: column;
@@ -340,15 +388,40 @@ textarea {
     justify-content: center;
     gap: 10px;
   }
-  .main__contacto {
-    margin-top: 70px;
+  .h1__servicios {
+    margin-top: 25%;
+    font-size: 60px;
   }
+  .p__servicios {
+    font-size: 43px;
+  }
+  .img__servicios {
+    width: 100%;
+    height: auto;
+  }
+  /*Contacto*/
+  .main__contacto {
+    margin-top: 100px;
+  }
+  .h1__contacto {
+    font-size: 40px;
+  }
+  .p__contacto {
+    display: none;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .form__contacto {
+    width: 100%;
+  }
+  /*Nuestras clases*/
   .main__nuestrasclases {
     margin-top: 170px;
   }
   .p__nuestrasclases {
     text-align: justify;
   }
+  /*Testimonios*/
   .main__testimonios {
     display: flex;
     flex-direction: column;
@@ -356,12 +429,22 @@ textarea {
     justify-content: center;
     gap: 10px;
   }
+  .h1__testimonios {
+    font-size: 60px;
+  }
+  .p__testimonios {
+    font-size: 43px;
+    text-align: center;
+  }
+  .testimonios {
+    font-size: 40px;
+    width: 140%;
+    height: auto;
+  }
 }
 /* estilos de tablet mq tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    font-size: 1.7rem;
-  }
+  /*General*/
   header {
     display: flex;
     flex-direction: row;
@@ -386,13 +469,17 @@ textarea {
     text-align: center;
     padding: 5px 0;
   }
-  .main__item {
-    display: flex;
-    flex-direction: row;
-  }
   .imagenes_comprimidas {
     width: 100%;
     height: 100px;
+  }
+  /*Home*/
+  .main__home {
+    flex-wrap: wrap;
+  }
+  .main__item {
+    display: flex;
+    flex-direction: row;
   }
   .main__tienda {
     display: flex;
@@ -424,6 +511,7 @@ textarea {
     gap: 10px;
     margin-top: 230px;
   }
+  /*contacto*/
   .contacto {
     margin-top: 50px;
   }
