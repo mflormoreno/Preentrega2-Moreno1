@@ -371,7 +371,7 @@ textarea {
   }
 }
 /* estilos de mobile mq mobile */
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   /*General*/
   /*Header*/
   header {

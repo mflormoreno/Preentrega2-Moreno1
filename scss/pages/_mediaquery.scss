@@ -103,7 +103,7 @@
 
 /* estilos de mobile mq mobile */
 
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
     /*General*/
     /*Header*/
         header{
@@ -183,7 +183,7 @@
             justify-content: center;
             gap: 10px;
             margin-top: 20%;
-    }
+        }
     
         .h1__tienda{
             font-size: 60px;
@@ -198,11 +198,11 @@
             grid-column: span 1;
             align-self: center;
             height: 50%;
-    }
+        }
     
         .btn--tamaño {
             font-size: 20px;
-    }
+        }
     /*Quienes somos*/
         .main__quienessomos{
             margin-top: 5%;
@@ -240,7 +240,7 @@
     /*Contacto*/
         .main__contacto{
             margin-top: 100px;
-    }
+        }
     
         .h1__contacto{
             font-size: 40px;
@@ -286,6 +286,4 @@
             width: 140%;
             height: auto;
         }
-    
     }
-    
