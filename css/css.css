@@ -135,8 +135,9 @@ footer {
 }
 
 .main__nuestrasclases {
-  padding: 15%;
+  margin-top: 200px;
   text-align: justify;
+  width: 60%;
 }
 
 /*estilos de main*/
@@ -357,9 +358,7 @@ textarea {
   .contacto {
     margin-top: 50px;
   }
-  .main__nuestrasclases {
-    margin-top: 120px;
-  }
+  /*nuestras clases*/
   .p__nuestrasclases {
     text-align: justify;
   }
