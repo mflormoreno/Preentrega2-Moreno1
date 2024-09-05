@@ -26,12 +26,11 @@
         align-items: center;
     }
 
-    .navbar-nav .nav-link {
+    .nav-link {
         font-size: 14px; 
         text-align: center;
         padding: 5px 0;
     }
-
     .imagenes_comprimidas {
         width: 100%; 
         height: 100px;
@@ -101,35 +100,43 @@
 
 /* estilos de mobile mq mobile */
 
-@media (max-width: 767px){
+@media screen and (max-width: 767px){
     /*General*/
     /*Header*/
         header{
             display: flex;
             flex-direction: row;
         }
-    
         .logo {
             width: 180px; 
             height: auto;
             border-radius: 50%;
         }
-    
         .navbar .banner {
             font-size: 60px;
             display: none;
         }
-    
         .navbar .container-fluid {
             align-items: center;
         }
-    
-        .navbar-nav .nav-link {
-            font-size: 30px; 
+        .nav-link {
+            font-size: 3rem; 
             text-align: center;
-            padding: 5px 0;
+            padding: 30px 0;
         }
-    
+        .sub--pestañas {
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .offcanvas-backdrop.show {
+            opacity: 0;
+        }
+        .titulo--pestaña {
+            font-size: 3em;
+            text-align: center;
+            font-weight: bold;
+        }
+        
         .navbar-toggler-icon {
             width: 100px;
             height: 100px;
@@ -164,15 +171,6 @@
         .animacion{
             display: none;
     }
-    /*Nuestras clases*/
-        .h1__nuestrasclases{
-            font-size: 60px;
-            margin: auto;
-    }
-    
-        .p__nuestrasclases{
-            font-size: 40px;
-        }
     /*Tienda*/
         .main__tienda {
             display: flex;
@@ -254,12 +252,19 @@
             width: 100%;
         }
     /*Nuestras clases*/
-        .main__nuestrasclases{
-            margin-top: 170px;
+        .main__nuestrasclases {
+            width: 100%;
+            padding: 100px 100px;
         }
-    
-        .p__nuestrasclases{
-            text-align: justify;
+        .h1__nuestrasclases {
+            font-size: 4em;
+            margin-bottom: 50px;
+        }
+        .p__nuestrasclases {
+            font-size: 2.7em;
+        }
+        .texto__oculto {
+            display: none;
         }
     /*Testimonios*/
         .main__testimonios{
@@ -273,12 +278,10 @@
         .h1__testimonios{
             font-size: 60px;
         }
-    
         .p__testimonios{
             font-size: 43px;
             text-align: center;
         }
-    
         .testimonios{
             font-size: 40px;
             width: 140%;

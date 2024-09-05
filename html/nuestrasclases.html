@@ -17,20 +17,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <!--Barra de navegación-->
         <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <img src="../imagenes_comprimidas/logo.png" alt="logo de la web" class="logo">
+                <a href="../index.html"><img src="../imagenes_comprimidas/logo.png" alt="logo de la web" class="logo"></a>
                 <a class="banner" href="../index.html">Matemática by Flor</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Matematica by Flor</h5>
+                        <h3 class="offcanvas-title titulo--pestaña" id="offcanvasNavbarLabel">Matematica by Flor</h3>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -43,9 +42,9 @@
                                 Pestañas
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../html/nuestrasclases.html">Nuestras clases</a></li>
-                                    <li><a class="dropdown-item" href="../html/tienda.html">Tienda</a></li>
-                                    <li><a class="dropdown-item" href="../html/testimonios.html">Testimonios</a></li>
+                                    <li><a class="dropdown-item sub--pestañas" href="../html/nuestrasclases.html">Nuestras clases</a></li>
+                                    <li><a class="dropdown-item sub--pestañas" href="../html/tienda.html">Tienda</a></li>
+                                    <li><a class="dropdown-item sub--pestañas" href="../html/testimonios.html">Testimonios</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -66,18 +65,14 @@
 
     <!--seccion cinco-->
     <main class="main__nuestrasclases container">
-        <div>
-            <h1 class="h1__nuestrasclases">
-                Clases de Matemática para Nivel Secundario e ingreso a Universidades
-            </h1>
-        </div>
-        <div>
-            <p class="p__nuestrasclases mt-4 ">
-                Soy una profesora de matemática apasionada por hacer que el aprendizaje sea accesible y comprensible para todxs. Ofrezco clases personalizadas para estudiantes de nivel secundario, enfocándome en reforzar conceptos clave, resolver dudas y preparar a mis alumnxs para exámenes. Además, brindo apoyo especializado para quienes desean ingresar a universidades, abordando temas específicos de los exámenes de ingreso y brindando estrategias para resolver problemas de manera eficiente.
-                Mis clases están diseñadas para adaptarse a las necesidades y ritmos de aprendizaje de cada estudiante, ya sea que busques mejorar tu rendimiento académico, prepararte para un examen importante o simplemente afianzar tus conocimientos en matemática. A través de un enfoque práctico y claro, te ayudaré a desarrollar la confianza y las habilidades necesarias para enfrentar cualquier desafío matemático.
-                ¡Hagamos de las matemáticas algo simple y accesible para todxs!
-            </p>
-        </div>
+        <h1 class="h1__nuestrasclases">
+            Clases de Matemática para Nivel Secundario e ingreso a Universidades
+        </h1>
+        <p class="p__nuestrasclases mt-4 ">
+            Soy una profesora de matemática apasionada por hacer que el aprendizaje sea accesible y comprensible para todxs. Ofrezco clases personalizadas para estudiantes de nivel secundario, enfocándome en reforzar conceptos clave, resolver dudas y preparar a mis alumnxs para exámenes. Además, brindo apoyo especializado para quienes desean ingresar a universidades, abordando temas específicos de los exámenes de ingreso y brindando estrategias para resolver problemas de manera eficiente.
+            <span class="texto__oculto">Mis clases están diseñadas para adaptarse a las necesidades y ritmos de aprendizaje de cada estudiante, ya sea que busques mejorar tu rendimiento académico, prepararte para un examen importante o simplemente afianzar tus conocimientos en matemática. A través de un enfoque práctico y claro, te ayudaré a desarrollar la confianza y las habilidades necesarias para enfrentar cualquier desafío matemático.
+            ¡Hagamos de las matemáticas algo simple y accesible para todxs!</span>
+        </p>
     </main>
 
     <!--pie de pagina-->
