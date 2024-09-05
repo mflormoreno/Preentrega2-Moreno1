@@ -6,30 +6,30 @@
         display: flex;
         flex-direction: row;
     }
-
     header nav ul {
         display: flex;
         gap: 10px;
     }
-
     .logo{
         width: 120px; 
         height: auto;
         border-radius: 50%;
     }
-
     .navbar .banner {
         font-size: 35px;
     }
-
     .navbar .container-fluid {
         align-items: center;
     }
-
     .nav-link {
-        font-size: 14px; 
+        font-size: 30px; 
         text-align: center;
         padding: 5px 0;
+    }
+    .sub--pestañas {
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
     }
     .imagenes_comprimidas {
         width: 100%; 
@@ -119,6 +119,9 @@
         .navbar .container-fluid {
             align-items: center;
         }
+        .btn-close {
+            font-size: 30px;
+        }
         .nav-link {
             font-size: 3rem; 
             text-align: center;
@@ -132,20 +135,17 @@
             opacity: 0;
         }
         .titulo--pestaña {
-            font-size: 3em;
+            font-size: 2.6em;
             text-align: center;
             font-weight: bold;
         }
-        
         .navbar-toggler-icon {
             width: 100px;
             height: 100px;
         }
-    
         .dropdown-menu{
             font-size: 26px;
         }
-    
         footer {
         margin: 0;
         margin-top: 20px;
@@ -156,18 +156,15 @@
             margin-top: 200px;
             display: flex;
         }
-    
         .main__item{
             flex-direction: column;
             gap: 40px;
             align-items: center;
         }
-    
         .imagenes_comprimidas {
             width: 100%; 
             height: 100px;
     }
-    
         .animacion{
             display: none;
     }
@@ -287,4 +284,8 @@
             width: 140%;
             height: auto;
         }
+    /*Nav Contacto*/
+    .logo--contacto {
+        font-size: 5px !important;
+    }
     }

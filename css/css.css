@@ -308,9 +308,14 @@ textarea {
     align-items: center;
   }
   .nav-link {
-    font-size: 14px;
+    font-size: 30px;
     text-align: center;
     padding: 5px 0;
+  }
+  .sub--pestañas {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
   }
   .imagenes_comprimidas {
     width: 100%;
@@ -389,6 +394,9 @@ textarea {
   .navbar .container-fluid {
     align-items: center;
   }
+  .btn-close {
+    font-size: 30px;
+  }
   .nav-link {
     font-size: 3rem;
     text-align: center;
@@ -402,7 +410,7 @@ textarea {
     opacity: 0;
   }
   .titulo--pestaña {
-    font-size: 3em;
+    font-size: 2.6em;
     text-align: center;
     font-weight: bold;
   }
@@ -537,6 +545,10 @@ textarea {
     font-size: 40px;
     width: 140%;
     height: auto;
+  }
+  /*Nav Contacto*/
+  .logo--contacto {
+    font-size: 5px !important;
   }
 }
 
