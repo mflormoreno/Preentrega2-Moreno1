@@ -244,20 +244,8 @@ footer {
   height: 210px;
 }
 
-.logo__contacto {
-  width: 70px !important;
-  height: 70px;
-  padding: 0;
-}
-
-.icon__contacto {
-  width: 50px !important;
-  height: 50px !important;
-  margin: 0;
-}
-
 .main__contacto {
-  margin-top: 100px;
+  margin-top: 160px;
   text-align: justify;
 }
 
@@ -389,7 +377,7 @@ textarea {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 20%;
+    margin-top: 140px;
   }
   .h1__tienda {
     font-size: 60px;
@@ -437,10 +425,11 @@ textarea {
   }
   /*Contacto*/
   .main__contacto {
-    margin-top: 100px;
+    margin-top: 140px;
   }
   .h1__contacto {
     font-size: 40px;
+    margin-bottom: 20px;
   }
   .p__contacto {
     display: none;
