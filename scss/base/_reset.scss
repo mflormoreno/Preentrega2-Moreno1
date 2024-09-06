@@ -1,31 +1,45 @@
 /*RESET*/
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/*body*/
-
-body{
+body {
     margin: 0;
     font-family: sans-serif;
     color: #000000;
     background-color: $color-principal;
 }
-
-/*logo de todos los html*/
-
+.conteiner-desktop {
+    padding: 0 20px;
+}
 .logo {
     width: 120px;
     height: 120px;
     padding: 10px;
     border-radius: 50%;
 }
-
-/*mis h1*/
-
+.navbar-toggler {
+    width: 80px;
+    height: 80px;
+}
+.navbar-toggler-icon {
+width: 50px;
+height: 50px;
+}
+.nav-link {
+    font-size: 30px; 
+    text-align: center;
+    padding: 5px 0;
+}
+.sub--pestañas {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.titulo--pestaña {
+padding-left: 50px;
+}
 h1 {
     text-align:center;
     margin: 0;

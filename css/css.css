@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-/*body*/
 body {
   margin: 0;
   font-family: sans-serif;
@@ -14,7 +13,10 @@ body {
   background-color: #f0e6e6;
 }
 
-/*logo de todos los html*/
+.conteiner-desktop {
+  padding: 0 20px;
+}
+
 .logo {
   width: 120px;
   height: 120px;
@@ -22,7 +24,32 @@ body {
   border-radius: 50%;
 }
 
-/*mis h1*/
+.navbar-toggler {
+  width: 80px;
+  height: 80px;
+}
+
+.navbar-toggler-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-link {
+  font-size: 30px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.sub--pestañas {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.titulo--pestaña {
+  padding-left: 50px;
+}
+
 h1 {
   text-align: center;
   margin: 0;
@@ -285,97 +312,8 @@ textarea {
   box-sizing: content;
 }
 
-/* estilos de tablet mq tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /*General*/
-  header {
-    display: flex;
-    flex-direction: row;
-  }
-  header nav ul {
-    display: flex;
-    gap: 10px;
-  }
-  .logo {
-    width: 120px;
-    height: auto;
-    border-radius: 50%;
-  }
-  .navbar .banner {
-    font-size: 35px;
-  }
-  .navbar .container-fluid {
-    align-items: center;
-  }
-  .nav-link {
-    font-size: 30px;
-    text-align: center;
-    padding: 5px 0;
-  }
-  .sub--pestañas {
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
-  }
-  .imagenes_comprimidas {
-    width: 100%;
-    height: 100px;
-  }
-  /*Home*/
-  .main__home {
-    flex-wrap: wrap;
-  }
-  .main__item {
-    display: flex;
-    flex-direction: row;
-  }
-  .main__tienda {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 160%;
-  }
-  .button--tamaño {
-    grid-column: span 1;
-    align-self: center;
-    height: 50%;
-  }
-  .btn--tamaño {
-    font-size: 30px;
-  }
-  .main__quienessomos {
-    margin-top: 10%;
-  }
-  .servicios {
-    margin-top: 20%;
-  }
-  .main__servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 230px;
-  }
-  /*contacto*/
-  .contacto {
-    margin-top: 50px;
-  }
-  /*nuestras clases*/
-  .p__nuestrasclases {
-    text-align: justify;
-  }
-  .main__testimonios {
-    width: 110%;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-  }
-}
 /* estilos de mobile mq mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   /*General*/
   /*Header*/
   header {
@@ -383,9 +321,13 @@ textarea {
     flex-direction: row;
   }
   .logo {
-    width: 180px;
+    width: 100px;
     height: auto;
     border-radius: 50%;
+  }
+  .navbar-toggler-icon {
+    width: 50px;
+    height: 60px;
   }
   .navbar .banner {
     font-size: 60px;
@@ -398,25 +340,21 @@ textarea {
     font-size: 30px;
   }
   .nav-link {
-    font-size: 3rem;
+    font-size: 1.6em;
     text-align: center;
     padding: 30px 0;
   }
   .sub--pestañas {
-    font-size: 1.5em;
+    font-size: 0.8em;
     text-align: center;
   }
   .offcanvas-backdrop.show {
     opacity: 0;
   }
   .titulo--pestaña {
-    font-size: 2.6em;
-    text-align: center;
+    font-size: 2em;
+    padding-left: 20px;
     font-weight: bold;
-  }
-  .navbar-toggler-icon {
-    width: 100px;
-    height: 100px;
   }
   .dropdown-menu {
     font-size: 26px;
@@ -428,13 +366,14 @@ textarea {
   }
   /*Home*/
   .main__home {
-    margin-top: 200px;
+    margin-top: 120px;
     display: flex;
   }
   .main__item {
     flex-direction: column;
     gap: 40px;
     align-items: center;
+    padding: 0;
   }
   .imagenes_comprimidas {
     width: 100%;
@@ -549,6 +488,86 @@ textarea {
   /*Nav Contacto*/
   .logo--contacto {
     font-size: 5px !important;
+  }
+}
+/* estilos de tablet mq tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+  /*General*/
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  header nav ul {
+    display: flex;
+    gap: 10px;
+  }
+  .logo {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+  }
+  .navbar .banner {
+    font-size: 35px;
+  }
+  .navbar .container-fluid {
+    align-items: center;
+    padding: 0;
+  }
+  .imagenes_comprimidas {
+    width: 100%;
+    height: 100px;
+  }
+  /*Home*/
+  .main__home {
+    flex-wrap: wrap;
+  }
+  .main__item {
+    display: flex;
+    flex-direction: row;
+  }
+  .main__tienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 160%;
+  }
+  .button--tamaño {
+    grid-column: span 1;
+    align-self: center;
+    height: 50%;
+  }
+  .btn--tamaño {
+    font-size: 30px;
+  }
+  .main__quienessomos {
+    margin-top: 10%;
+  }
+  .servicios {
+    margin-top: 20%;
+  }
+  .main__servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 230px;
+  }
+  /*contacto*/
+  .contacto {
+    margin-top: 50px;
+  }
+  /*nuestras clases*/
+  .p__nuestrasclases {
+    text-align: justify;
+  }
+  .main__testimonios {
+    width: 110%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
   }
 }
 
