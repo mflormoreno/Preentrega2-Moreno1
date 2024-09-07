@@ -3,13 +3,12 @@
 .main__home{
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     margin-top: 160px;
-    justify-content: center;
-    align-content: center;
     .main__item {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
     .items { /*home: links*/
         width: 100%;
         text-transform: uppercase;
@@ -28,7 +27,6 @@
     }
 }
 }
-
 /*animacion*/
 .transformer{
     margin: 0 auto;
