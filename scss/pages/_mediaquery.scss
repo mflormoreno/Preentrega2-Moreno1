@@ -156,22 +156,15 @@
         .main__testimonios{
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
         }
     
         .h1__testimonios{
-            font-size: 60px;
-        }
-        .p__testimonios{
-            font-size: 43px;
-            text-align: center;
+            font-size: 2.7em;
+            margin-top: 150px;
         }
         .testimonios{
-            font-size: 40px;
-            width: 140%;
-            height: auto;
+            width: 100%;
+            font-size: 1.3em;
         }
     /*Nav Contacto*/
     .logo--contacto {
@@ -220,7 +213,6 @@
     .servicios{
         margin-top: 20%;
 }
-
     .main__servicios {
         display: flex;
         flex-direction: column;
@@ -234,17 +226,13 @@
         margin-top: 50px;
 }
 /*nuestras clases*/
-
-
     .p__nuestrasclases{
         text-align: justify;
     }
-
+/*Testimonios*/
     .main__testimonios{
-        width: 110%;
-        height: 300px;
         display: flex;
-        flex-direction: row;
-    }
+        gap: 80px;
+        }
 }
 
