@@ -72,29 +72,17 @@
             display: none;
     }
     /*Tienda*/
-        .main__tienda {
+        .main__tienda{
+            margin-top: 20px;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
         }
-    
-        .h1__tienda{
-            font-size: 60px;
-            margin: auto;
+        .h1__tienda {
+            font-size: 2em;
         }
-    
         .p__tienda{
-            font-size: 40px;
+            font-size: 1.4em;
         }
-    
-        .button--tamaño {
-            grid-column: span 1;
-            align-self: center;
-            height: 50%;
-        }
-    
         .btn--tamaño {
             font-size: 20px;
         }
@@ -215,31 +203,20 @@
         height: 100px;
     }
 /*Home*/
-
 /*Tienda*/
     .main__tienda {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
         margin-top: 20px;
 }
-
-    .button--tamaño {
-        grid-column: span 1;
-        align-self: center;
-        height: 50%;
-}
-
-    .btn--tamaño {
-        font-size: 30px;
-}
-
+    .p__tienda {
+        padding: 0 20px;
+    }
+/*Quienes somos*/
     .main__quienessomos{
         margin-top: 10%;
     }
-
+/*Servicios*/
     .servicios{
         margin-top: 20%;
 }

@@ -1,28 +1,23 @@
 /*estilos de main*/
-
-.main__tienda{
+.main__tienda {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3, 1fr);
-    margin-top: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     text-align: center;
     align-items: center;
-    width: 100%;
+    gap: 20px;
 }
-
 .img__tienda--tamaño {
     grid-column: span 2;
 }
-
+.h1__tienda {
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
 .p__tienda{
     text-align: justify;
+    width: 100%;
 }
-
-.button--tamaño {
-    grid-column: span 3;
-    align-self:flex-start;
-}
-
 .btn--tamaño {
     font-size: 30px;
 }

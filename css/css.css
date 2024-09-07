@@ -169,24 +169,24 @@ footer {
 .main__tienda {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  margin-top: 15px;
+  grid-template-rows: repeat(2, 1fr);
   text-align: center;
   align-items: center;
-  width: 100%;
+  gap: 20px;
 }
 
 .img__tienda--tamaño {
   grid-column: span 2;
 }
 
-.p__tienda {
-  text-align: justify;
+.h1__tienda {
+  margin-top: 150px;
+  margin-bottom: 20px;
 }
 
-.button--tamaño {
-  grid-column: span 3;
-  align-self: flex-start;
+.p__tienda {
+  text-align: justify;
+  width: 100%;
 }
 
 .btn--tamaño {
@@ -373,23 +373,15 @@ textarea {
   }
   /*Tienda*/
   .main__tienda {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
   }
   .h1__tienda {
-    font-size: 60px;
-    margin: auto;
+    font-size: 2em;
   }
   .p__tienda {
-    font-size: 40px;
-  }
-  .button--tamaño {
-    grid-column: span 1;
-    align-self: center;
-    height: 50%;
+    font-size: 1.4em;
   }
   .btn--tamaño {
     font-size: 20px;
@@ -505,22 +497,16 @@ textarea {
   .main__tienda {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
     margin-top: 20px;
   }
-  .button--tamaño {
-    grid-column: span 1;
-    align-self: center;
-    height: 50%;
+  .p__tienda {
+    padding: 0 20px;
   }
-  .btn--tamaño {
-    font-size: 30px;
-  }
+  /*Quienes somos*/
   .main__quienessomos {
     margin-top: 10%;
   }
+  /*Servicios*/
   .servicios {
     margin-top: 20%;
   }
