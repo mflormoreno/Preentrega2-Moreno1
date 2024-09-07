@@ -236,8 +236,17 @@ footer {
 
 /*parrafo de servicios*/
 .servicios {
-  margin-top: 150px;
+  margin-top: 170px;
   text-align: justify;
+  padding: 0 80px;
+}
+
+.h1__servicios {
+  margin-bottom: 30px;
+}
+
+.p__servicios {
+  margin-bottom: 60px;
 }
 
 /*estilos de main */
@@ -413,23 +422,12 @@ textarea {
     text-align: justify;
   }
   /*Servicios*/
+  .servicios {
+    padding: 0 20px;
+  }
   .main__servicios {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  .h1__servicios {
-    margin-top: 25%;
-    font-size: 60px;
-  }
-  .p__servicios {
-    font-size: 43px;
-  }
-  .img__servicios {
-    width: 100%;
-    height: auto;
   }
   /*Contacto*/
   .main__contacto {
@@ -517,15 +515,11 @@ textarea {
   }
   /*Servicios*/
   .servicios {
-    margin-top: 20%;
+    padding: 0 20px;
   }
   .main__servicios {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 230px;
   }
   /*contacto*/
   .contacto {
