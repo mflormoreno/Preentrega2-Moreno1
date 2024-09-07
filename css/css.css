@@ -57,7 +57,7 @@ h1 {
   font-weight: bold;
 }
 
-body header .banner {
+.banner {
   font-family: "Playwrite BE VLG", cursive;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -69,15 +69,6 @@ body header .banner {
 }
 
 /*parrafos de todos mis html*/
-p {
-  margin: 0;
-  margin-bottom: 10px;
-  font-family: sans-serif;
-  font-weight: 100;
-  font-size: 15px;
-  padding: 5px;
-}
-
 main div img {
   width: 100%;
   height: 100%;
@@ -89,10 +80,18 @@ main .img-dos, main .img-cinco {
 }
 
 /* estilos de footer */
+p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  padding: 5px;
+}
+
 footer {
   color: #FF81AE;
   text-align: center;
-  font-size: 10px;
   padding: 70px 0;
   margin-top: 30px;
 }
@@ -161,9 +160,9 @@ footer {
 }
 
 .main__nuestrasclases {
-  margin-top: 200px;
+  margin-top: 170px;
   text-align: justify;
-  width: 60%;
+  padding: 0 40px;
 }
 
 /*estilos de main*/
@@ -171,7 +170,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  margin-top: 15%;
+  margin-top: 15px;
   text-align: center;
   align-items: center;
   width: 100%;
@@ -346,6 +345,9 @@ textarea {
   .dropdown-menu {
     font-size: 26px;
   }
+  p {
+    font-size: 1.2em;
+  }
   footer {
     margin: 0;
     margin-top: 20px;
@@ -376,7 +378,6 @@ textarea {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 140px;
   }
   .h1__tienda {
     font-size: 60px;
@@ -440,15 +441,13 @@ textarea {
   }
   /*Nuestras clases*/
   .main__nuestrasclases {
-    width: 100%;
-    padding: 100px 100px;
+    margin-top: 140px;
   }
   .h1__nuestrasclases {
-    font-size: 4em;
-    margin-bottom: 50px;
+    font-size: 2.3em;
   }
   .p__nuestrasclases {
-    font-size: 2.7em;
+    font-size: 1.5em;
   }
   .texto__oculto {
     display: none;
@@ -509,7 +508,7 @@ textarea {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 160%;
+    margin-top: 20px;
   }
   .button--tamaño {
     grid-column: span 1;

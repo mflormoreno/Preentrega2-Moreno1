@@ -45,10 +45,13 @@
         .dropdown-menu{
             font-size: 26px;
         }
+        p {
+            font-size: 1.2em;
+        }
         footer {
-        margin: 0;
-        margin-top: 20px;
-        padding: 0;
+            margin: 0;
+            margin-top: 20px;
+            padding: 0;
         }
     /*Home*/
         .main__home{
@@ -75,7 +78,6 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            margin-top: 140px;
         }
     
         .h1__tienda{
@@ -151,15 +153,13 @@
         }
     /*Nuestras clases*/
         .main__nuestrasclases {
-            width: 100%;
-            padding: 100px 100px;
+            margin-top: 140px;
         }
         .h1__nuestrasclases {
-            font-size: 4em;
-            margin-bottom: 50px;
+            font-size: 2.3em;
         }
         .p__nuestrasclases {
-            font-size: 2.7em;
+            font-size: 1.5em;
         }
         .texto__oculto {
             display: none;
@@ -223,7 +223,7 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
-        margin-top: 160%;
+        margin-top: 20px;
 }
 
     .button--tamaño {
