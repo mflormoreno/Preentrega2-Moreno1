@@ -88,15 +88,15 @@
         }
     /*Quienes somos*/
         .main__quienessomos{
-            margin-top: 5%;
+            margin-top: 160px;
         }
-    
         .h1__quienessomos{
-            font-size: 60px;
+            font-size: 2em;
         }
-    
         .p__quienessomos{
-            font-size: 43px;
+            font-size: 1.3em;
+            padding: 0 10px;
+            text-align: justify;
         }
     /*Servicios*/
         .main__servicios {
@@ -207,7 +207,7 @@
     }
 /*Quienes somos*/
     .main__quienessomos{
-        margin-top: 10%;
+        padding: 0;
     }
 /*Servicios*/
     .servicios{
