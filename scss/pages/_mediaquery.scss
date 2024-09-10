@@ -30,7 +30,7 @@
             text-align: center;
             padding: 30px 0;
         }
-        .sub--pestañas {
+        .sub--Explora {
             font-size: 0.8em;
             text-align: center;
         }
@@ -86,11 +86,11 @@
         .btn--tamaño {
             font-size: 20px;
         }
-    /*Quienes somos*/
+    /*Quienes somos - Home*/
         .main__quienessomos{
             margin-top: 160px;
         }
-        .h1__quienessomos{
+        .h2__quienessomos{
             font-size: 2em;
         }
         .p__quienessomos{
@@ -129,11 +129,14 @@
         .main__nuestrasclases {
             margin-top: 140px;
         }
+        .div__nuestrasclases {
+            flex-direction: column;
+        }
         .h1__nuestrasclases {
             font-size: 2.3em;
         }
         .p__nuestrasclases {
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
         .texto__oculto {
             display: none;

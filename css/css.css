@@ -40,13 +40,13 @@ body {
   padding: 5px 0;
 }
 
-.sub--pestañas {
+.sub--Explora {
   font-size: 20px;
   text-align: center;
   padding: 10px;
 }
 
-.titulo--pestaña {
+.titulo--Explora {
   padding-left: 50px;
 }
 
@@ -126,6 +126,17 @@ footer {
   box-shadow: 0 0 20px #FF81AE;
   margin-top: 20px;
 }
+.main__home .h2__quienessomos {
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.main__home .p__quienessomos {
+  text-align: justify;
+  margin-top: 20px;
+}
 
 /*animacion*/
 .transformer {
@@ -163,6 +174,33 @@ footer {
   margin-top: 170px;
   text-align: justify;
   padding: 0 40px;
+}
+
+.main__nuestrasclases {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.div__nuestrasclases {
+  display: flex;
+  width: 100%;
+}
+
+.p__nuestrasclases, .aside__nuestrasclases {
+  flex: 1;
+  padding: 10px;
+}
+
+.aside__nuestrasclases img {
+  width: 100%;
+  height: 500px;
+  display: block;
+}
+
+.h1__nuestrasclases {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /*estilos de main*/
@@ -220,18 +258,6 @@ footer {
   font-style: oblique;
   font-size: 15px;
   place-self: center;
-}
-
-.main__quienessomos {
-  margin-top: 180px;
-}
-
-.h1__quienessomos {
-  margin-bottom: 40px;
-}
-
-.p__quienessomos {
-  padding: 0 100px;
 }
 
 /*parrafo de servicios*/
@@ -302,7 +328,7 @@ footer {
 }
 
 input, textarea {
-  width: 50%;
+  width: 100%;
   box-sizing: border-box;
   padding: 6px 20px;
   border: none;
@@ -353,7 +379,7 @@ textarea {
     text-align: center;
     padding: 30px 0;
   }
-  .sub--pestañas {
+  .sub--Explora {
     font-size: 0.8em;
     text-align: center;
   }
@@ -409,11 +435,11 @@ textarea {
   .btn--tamaño {
     font-size: 20px;
   }
-  /*Quienes somos*/
+  /*Quienes somos - Home*/
   .main__quienessomos {
     margin-top: 160px;
   }
-  .h1__quienessomos {
+  .h2__quienessomos {
     font-size: 2em;
   }
   .p__quienessomos {
@@ -449,11 +475,14 @@ textarea {
   .main__nuestrasclases {
     margin-top: 140px;
   }
+  .div__nuestrasclases {
+    flex-direction: column;
+  }
   .h1__nuestrasclases {
     font-size: 2.3em;
   }
   .p__nuestrasclases {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .texto__oculto {
     display: none;
