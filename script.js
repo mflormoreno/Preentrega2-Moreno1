@@ -1,12 +1,12 @@
 // Array de cursos
 const cursos = [
-    { id: 1, nombre: "Clases virtuales para nivel secundario", nivel: "bajo", precio: 8000 },
-    { id: 2, nombre: "Clases virtuales para ingreso a UNLaM", nivel: "medio", precio: 9000 },
-    { id: 3, nombre: "Álgebra I", nivel: "basico", precio: 5000 },
-    { id: 4, nombre: "Álgebra II", nivel: "intermedio", precio: 6000 },
+    { id: 1, nombre: "Clases virtuales para nivel secundario", nivel: "Básico", precio: 8000 },
+    { id: 2, nombre: "Clases virtuales para ingreso a UNLaM", nivel: "Intermedio", precio: 9000 },
+    { id: 3, nombre: "Álgebra I", nivel: "Básico", precio: 5000 },
+    { id: 4, nombre: "Álgebra II", nivel: "Intermedio", precio: 6000 },
     { id: 5, nombre: "Análisis matemático I", nivel: "Básico", precio: 5500 },
-    { id: 6, nombre: "Análisis matemático II", nivel: "intermedio", precio: 6500 },
-    { id: 7, nombre: "Ingreso a UNLaM", nivel: "intermedio", precio: 7000 }
+    { id: 6, nombre: "Análisis matemático II", nivel: "Intermedio", precio: 6500 },
+    { id: 7, nombre: "Ingreso a UNLaM", nivel: "Intermedio", precio: 7000 }
 ];
 
 // Array del carrito de compras
@@ -18,7 +18,7 @@ if (carrito.length > 0 && confirm("¿Quieres borrar el carrito al actualizar la 
     localStorage.removeItem("carrito");
 }
 
-// Función para actualizar el carrito en el DOM y en Local Storage
+// Actualiza el carrito en el DOM y en Local Storage
 function actualizarCarrito() {
     const listaCarrito = document.getElementById("lista-carrito");
     listaCarrito.innerHTML = ""; // Limpia el contenido previo
@@ -53,18 +53,18 @@ function actualizarCarrito() {
 
 // Función para eliminar un curso del carrito
 function eliminarDelCarrito(index) {
-    carrito.splice(index, 1); // Elimina el curso del array
-    actualizarCarrito(); // Actualiza el carrito en el DOM y Local Storage
+    carrito.splice(index, 1); 
+    actualizarCarrito(); 
 }
 
-// Función para agregar un curso al carrito
+// Agrega un curso al carrito
 function agregarAlCarrito(idCurso) {
     const cursoSeleccionado = cursos.find(curso => curso.id === idCurso);
     carrito.push(cursoSeleccionado);
     actualizarCarrito();
 }
 
-// Función para mostrar los cursos en el DOM
+// Muestra los cursos en el DOM
 function mostrarCursos() {
     const contenedorCursos = document.getElementById("cursos");
 
@@ -80,13 +80,13 @@ function mostrarCursos() {
     });
 }
 
-// Función para procesar la compra
+// Procesamiento de compra
 function comprarCarrito() {
     if (carrito.length > 0) {
         alert("Gracias por tu compra!");
-        carrito = []; // Vacía el carrito
-        actualizarCarrito(); // Actualiza el DOM y el Local Storage
-        localStorage.removeItem("carrito"); // Borra el carrito del Local Storage
+        carrito = []; 
+        actualizarCarrito(); 
+        localStorage.removeItem("carrito"); 
     } else {
         alert("El carrito está vacío.");
     }
