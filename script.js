@@ -12,18 +12,12 @@ const cursos = [
 // Array del carrito de compras
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-// Pregunta si el usuario quiere limpiar el carrito al cargar la página, solo si tiene elementos
-if (carrito.length > 0 && confirm("¿Quieres borrar el carrito al actualizar la página?")) {
-    carrito = [];
-    localStorage.removeItem("carrito");
-}
-
 // Actualiza el carrito en el DOM y en Local Storage
 function actualizarCarrito() {
     const listaCarrito = document.getElementById("lista-carrito");
-    listaCarrito.innerHTML = ""; // Limpia el contenido previo
+    listaCarrito.innerHTML = ""; 
 
-    // Muestra cada curso en el carrito con un botón de eliminar
+    // Botón de eliminar al lado de cada curso
     carrito.forEach((curso, index) => {
         const item = document.createElement("li");
         item.textContent = `${curso.nombre} - $${curso.precio}`;
@@ -31,11 +25,12 @@ function actualizarCarrito() {
         // Botón para eliminar el curso del carrito
         const btnEliminar = document.createElement("button");
         btnEliminar.textContent = "Eliminar";
+        btnEliminar.classList.add("btn", "btn-danger", "btn-sm", "ms-2");
         btnEliminar.onclick = () => {
             eliminarDelCarrito(index);
         };
 
-        item.appendChild(btnEliminar); // Agrega el botón al elemento de la lista
+        item.appendChild(btnEliminar); // Botón al lado del elemento de la lista de carrito
         listaCarrito.appendChild(item);
     });
 
@@ -46,15 +41,26 @@ function actualizarCarrito() {
     // Guarda el carrito en Local Storage
     localStorage.setItem("carrito", JSON.stringify(carrito));
 
-    // Muestra el botón de comprar si hay elementos en el carrito
+    // Muestra el botón de comprar solo si hay elementos en el carrito
     const btnComprar = document.getElementById("btn-comprar");
     btnComprar.style.display = carrito.length > 0 ? "block" : "none";
+
+    // Muestra el botón de vaciar carrito solo si hay productos en el carrito
+    const btnVaciar = document.getElementById("vaciar-carrito");
+    btnVaciar.style.display = carrito.length > 0 ? "inline-block" : "none"; 
 }
 
 // Función para eliminar un curso del carrito
 function eliminarDelCarrito(index) {
     carrito.splice(index, 1); 
     actualizarCarrito(); 
+}
+
+// Función para vaciar el carrito
+function vaciarCarrito() {
+    carrito = []; 
+    actualizarCarrito(); 
+    localStorage.removeItem("carrito"); 
 }
 
 // Agrega un curso al carrito
@@ -70,20 +76,21 @@ function mostrarCursos() {
 
     cursos.forEach((curso) => {
         const cursoDiv = document.createElement("div");
+        cursoDiv.classList.add("col-md-4", "curso", "p-3", "border", "rounded", "text-center");
         cursoDiv.innerHTML = `
             <h3>${curso.nombre}</h3>
             <p>Nivel: ${curso.nivel}</p>
             <p>Precio: $${curso.precio}</p>
-            <button onclick="agregarAlCarrito(${curso.id})">Agregar al Carrito</button>
+            <button class="btn btn-primary" onclick="agregarAlCarrito(${curso.id})">Agregar al Carrito</button>
         `;
         contenedorCursos.appendChild(cursoDiv);
     });
 }
 
-// Procesamiento de compra
+// Mensaje de compra/no compra
 function comprarCarrito() {
     if (carrito.length > 0) {
-        alert("Gracias por tu compra!");
+        alert("¡Gracias por tu compra!");
         carrito = []; 
         actualizarCarrito(); 
         localStorage.removeItem("carrito"); 
