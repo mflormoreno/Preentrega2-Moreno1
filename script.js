@@ -1,33 +1,29 @@
 let carrito = [];
 
-// Carga el carrito desde el Local Storage si existe
 try {
     const carritoGuardado = localStorage.getItem("carrito");
     carrito = carritoGuardado ? JSON.parse(carritoGuardado) : [];
     if (!Array.isArray(carrito)) throw new Error("El carrito no es un array válido");
 } catch (error) {
     console.error("Error al cargar el carrito desde Local Storage:", error);
-    carrito = []; // Si hay error, reinicia el carrito
+    carrito = []; 
 }
 
-// Array para almacenar los cursos obtenidos
 let cursos = [];
 
-// Simulación de obtención de cursos con fetch
 function obtenerCursos() {
-    fetch("http://localhost:3000/cursos") 
-        .then(response => {
-            if (!response.ok) throw new Error("Error al obtener los cursos");
-            return response.json();
-        })
-        .then(data => {
-            cursos = data; 
-            mostrarCursos(); 
-        })
-        .catch(error => console.error("Error al cargar los cursos:", error));
+    fetch("http://localhost:3000/cursos")
+    .then(response => {
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        return response.json();
+    })
+    .then(data => {
+        cursos = data;
+        mostrarCursos(); 
+    })
+    .catch(error => console.error("Error al cargar los cursos:", error));
 }
 
-// Actualiza el carrito en el DOM y en Local Storage
 function actualizarCarrito() {
     const listaCarrito = document.getElementById("lista-carrito");
     listaCarrito.innerHTML = ""; 
@@ -54,7 +50,6 @@ function actualizarCarrito() {
     document.getElementById("vaciar-carrito").style.display = carrito.length > 0 ? "inline-block" : "none";
 }
 
-// Agregar un curso al carrito
 function agregarAlCarrito(idCurso) {
     const cursoSeleccionado = cursos.find(curso => curso.id === idCurso);
     if (cursoSeleccionado) {
@@ -65,20 +60,18 @@ function agregarAlCarrito(idCurso) {
     }
 }
 
-// Eliminar un curso del carrito
+
 function eliminarDelCarrito(index) {
     carrito.splice(index, 1); 
     actualizarCarrito(); 
 }
 
-// Vaciar el carrito
 function vaciarCarrito() {
     carrito = [];
     actualizarCarrito();
     localStorage.removeItem("carrito");
 }
 
-// Muestra los cursos en el DOM
 function mostrarCursos() {
     const contenedorCursos = document.getElementById("cursos");
     contenedorCursos.innerHTML = "";
@@ -96,7 +89,7 @@ function mostrarCursos() {
     });
 }
 
-// Comprar los productos del carrito
+
 function comprarCarrito() {
     if (carrito.length > 0) {
         alert("¡Gracias por tu compra!");
@@ -108,7 +101,7 @@ function comprarCarrito() {
     }
 }
 
-// Evento al cargar la página
+
 document.addEventListener("DOMContentLoaded", () => {
     obtenerCursos();
     actualizarCarrito();
