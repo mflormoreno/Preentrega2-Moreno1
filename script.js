@@ -12,7 +12,7 @@ try {
 let cursos = [];
 
 function obtenerCursos() {
-    fetch("../json/cursos.json")
+    fetch("/json/cursos.json")
     .then(response => {
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         return response.json();
