@@ -18,8 +18,13 @@ function obtenerCursos() {
         return response.json();
     })
     .then(data => {
-        cursos = data;
-        mostrarCursos(); 
+        console.log("Datos cargados: ", data);
+        if (Array.isArray(data)) {
+            cursos = data;
+            mostrarCursos();
+        } else {
+            throw new Error("Los datos cargados no son un arreglo válido");
+        }
     })
     .catch(error => console.error("Error al cargar los cursos:", error));
 }
