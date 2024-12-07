@@ -18,9 +18,10 @@ function obtenerCursos() {
         return response.json();
     })
     .then(data => {
-        console.log("Datos cargados: ", data);
-        if (Array.isArray(data)) {
-            cursos = data;
+        console.log("Datos cargados desde el servidor: ", data);
+
+        if (data && Array.isArray(data.cursos)) {
+            cursos = data.cursos; // Accediendo a la clave `cursos`
             mostrarCursos();
         } else {
             throw new Error("Los datos cargados no son un arreglo válido");
