@@ -1,0 +1,11 @@
+{
+    "cursos": [
+    { "id": 1, "nombre": "Clases virtuales para nivel secundario", "nivel": "Básico", "precio": 8000 },
+    { "id": 2, "nombre": "Clases virtuales para ingreso a UNLaM", "nivel": "Intermedio", "precio": 9000 },
+    { "id": 3, "nombre": "Álgebra I", "nivel": "Básico", "precio": 5000 },
+    { "id": 4, "nombre": "Álgebra II", "nivel": "Intermedio", "precio": 6000 },
+    { "id": 5, "nombre": "Análisis matemático I", "nivel": "Básico", "precio": 5500 },
+    { "id": 6, "nombre": "Análisis matemático II", "nivel": "Intermedio", "precio": 6500 },
+    { "id": 7, "nombre": "Ingreso a UNLaM", "nivel": "Intermedio", "precio": 7000 }
+    ]
+}
