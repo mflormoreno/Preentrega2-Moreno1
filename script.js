@@ -12,7 +12,7 @@ try {
 let cursos = [];
 
 function obtenerCursos() {
-    fetch("/json/cursos.json")
+    fetch("/ProyectoFinal-Moreno/json/cursos.json")
     .then(response => {
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         return response.json();
@@ -60,7 +60,6 @@ function agregarAlCarrito(idCurso) {
     }
 }
 
-
 function eliminarDelCarrito(index) {
     carrito.splice(index, 1); 
     actualizarCarrito(); 
@@ -89,7 +88,6 @@ function mostrarCursos() {
     });
 }
 
-
 function comprarCarrito() {
     if (carrito.length > 0) {
         alert("¡Gracias por tu compra!");
@@ -100,7 +98,6 @@ function comprarCarrito() {
         alert("El carrito está vacío.");
     }
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
     obtenerCursos();
